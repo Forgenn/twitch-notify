@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="axios.min.js"></script>
+    <link rel="stylesheet" href="button.css">
+  </head>
+  <body>
+    <label for="fname">Streamer:</label>
+    <input type="text" id="name_streamer" name="fname"><br>
+    <label for="fname">Game:</label>
+    <input type="text" id="game_streamer" name="fname"><br>
+    <div style="display: flex; align-items: center; justify-content: center; padding-top: 5px;">
+      <button type="button" id="add_streamer">New Notification</button>
+
+    </div>
+    <button id="twitch_auth" type="button" class="btn btn-twitch" href=“https://api.twitch.tv/kraken/oauth2/authorize?response_type=code&client_id=[YOUR_PUBLIC_CLIENT_ID]&redirect_uri=[RETURN_URL]&scope=[SCOPES_REQUIRES]>
+      Log in with Twitch
+      </button>   
+  </body>
+</html>
+<script src="popup.js"></script>
+<script src="background.js"></script>

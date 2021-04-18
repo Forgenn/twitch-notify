@@ -1,0 +1,21 @@
+{
+    "name": "Twitch extension",
+    "description": "Extension to notify you when someone goes online",
+    "version": "1.0",
+    "manifest_version": 2,
+    "background": {
+      "scripts": [
+        "axios.min.js",
+        "background.js"
+      ]
+    },
+    "action": {
+        "default_popup": "popup.html"
+      },
+      "permissions": [
+        "storage", 
+        "notifications",
+        "identity",
+        "https://id.twitch.tv/oauth2/authorize*"
+      ]
+  }
